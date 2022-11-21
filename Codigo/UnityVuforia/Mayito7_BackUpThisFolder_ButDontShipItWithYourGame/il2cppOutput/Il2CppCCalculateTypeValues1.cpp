@@ -14877,6 +14877,8 @@ struct ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25  : public MonoBeha
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_10;
 	// UnityEngine.GameObject ControlNivel::fin
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fin_11;
+	// UnityEngine.GameObject ControlNivel::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_12;
 };
 
 // DefaultObserverEventHandler
@@ -15281,8 +15283,16 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	float ___timeStart_4;
 	// UnityEngine.UI.Text Timer::textBox
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textBox_5;
+	// UnityEngine.GameObject Timer::nivel1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel1_6;
+	// UnityEngine.GameObject Timer::nivel2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel2_7;
 	// UnityEngine.GameObject Timer::nivel3
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_8;
+	// UnityEngine.GameObject Timer::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_9;
+	// UnityEngine.GameObject Timer::botonReinicio
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___botonReinicio_10;
 };
 
 // UnityEngine.EventSystems.UIBehaviour

@@ -606,7 +606,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0
 IL2CPP_EXTERN_C String_t* _stringLiteral192A55B50790AC685290C04E76DA29C22580C980;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BF20F795791AC67CCC9E2B5B855E3A9D68CDDD6;
 IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
-IL2CPP_EXTERN_C String_t* _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748;
 IL2CPP_EXTERN_C String_t* _stringLiteral269F8BFBE6C7517C00380B92291D0799AAB2F285;
 IL2CPP_EXTERN_C String_t* _stringLiteral2A5808F3B889783C5484106C7296410EA27F30B5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3783D62DA544C4A10F6775DC60E5A763AA9BED1B;
@@ -4012,6 +4011,8 @@ struct ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25  : public MonoBeha
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_10;
 	// UnityEngine.GameObject ControlNivel::fin
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fin_11;
+	// UnityEngine.GameObject ControlNivel::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_12;
 };
 
 // DropdownSample
@@ -4376,8 +4377,16 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	float ___timeStart_4;
 	// UnityEngine.UI.Text Timer::textBox
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textBox_5;
+	// UnityEngine.GameObject Timer::nivel1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel1_6;
+	// UnityEngine.GameObject Timer::nivel2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel2_7;
 	// UnityEngine.GameObject Timer::nivel3
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_8;
+	// UnityEngine.GameObject Timer::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_9;
+	// UnityEngine.GameObject Timer::botonReinicio
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___botonReinicio_10;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -6162,8 +6171,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-// System.String System.Single::ToString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___format0, const RuntimeMethod* method) ;
+// System.String System.Single::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_deltaTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 // TMPro.TMP_InputField/SubmitEvent TMPro.TMP_InputField::get_onSubmit()
@@ -6988,6 +6997,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControlNivel_reinicio_m6A65D3638A28573E2
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___botonReinicio_5;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// nivel1.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___nivel1_8;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
+		// nivel2.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___nivel2_9;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		// nivel3.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___nivel3_10;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// tiempo.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___tiempo_12;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
 		// }
 		return;
 	}
@@ -7328,20 +7353,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pelotita__ctor_mDE7EE9313857B87A124CA1DD
 // System.Void Timer::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Start_m6820D211A06B2E5E24795D7EBE67EE865F39BC43 (Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// textBox.text = timeStart.ToString("F2");
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___textBox_5;
-		float* L_1 = (&__this->___timeStart_4);
-		String_t* L_2;
-		L_2 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D(L_1, _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, NULL);
+		// tiempo.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___tiempo_9;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// textBox.text = timeStart.ToString();
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___textBox_5;
+		float* L_2 = (&__this->___timeStart_4);
+		String_t* L_3;
+		L_3 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_3);
 		// }
 		return;
 	}
@@ -7353,37 +7376,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Update_m3AC30EFD54E8E1010F6E601AE1
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748);
 		s_Il2CppMethodInitialized = true;
 	}
+	float V_0 = 0.0f;
 	{
-		// if(nivel3 != null)
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___nivel3_6;
+		// if(nivel3 != null & timeStart > 0.0)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___nivel3_8;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
+		float L_2 = __this->___timeStart_4;
+		if (!((int32_t)((int32_t)L_1&((((double)((double)L_2)) > ((double)(0.0)))? 1 : 0))))
 		{
-			goto IL_003b;
+			goto IL_0052;
 		}
 	}
 	{
-		// timeStart += Time.deltaTime;
-		float L_2 = __this->___timeStart_4;
-		float L_3;
-		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___timeStart_4 = ((float)il2cpp_codegen_add(L_2, L_3));
-		// textBox.text = timeStart.ToString("F2");
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_4 = __this->___textBox_5;
-		float* L_5 = (&__this->___timeStart_4);
-		String_t* L_6;
-		L_6 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D(L_5, _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, NULL);
-		NullCheck(L_4);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_6);
+		// timeStart -= Time.deltaTime;
+		float L_3 = __this->___timeStart_4;
+		float L_4;
+		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___timeStart_4 = ((float)il2cpp_codegen_subtract(L_3, L_4));
+		// textBox.text = Mathf.Round(timeStart).ToString();
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_5 = __this->___textBox_5;
+		float L_6 = __this->___timeStart_4;
+		float L_7;
+		L_7 = bankers_roundf(L_6);
+		V_0 = L_7;
+		String_t* L_8;
+		L_8 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&V_0), NULL);
+		NullCheck(L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_5, L_8);
+		return;
 	}
 
-IL_003b:
+IL_0052:
 	{
+		// nivel1.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___nivel1_6;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+		// nivel2.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___nivel2_7;
+		NullCheck(L_10);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
+		// nivel3.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___nivel3_8;
+		NullCheck(L_11);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
+		// tiempo.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___tiempo_9;
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		// botonReinicio.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___botonReinicio_10;
+		NullCheck(L_13);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)1, NULL);
+		// timeStart = 300;
+		__this->___timeStart_4 = (300.0f);
 		// }
 		return;
 	}

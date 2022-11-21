@@ -16,6 +16,7 @@ public class ControlNivel : MonoBehaviour
     public GameObject nivel2;
     public GameObject nivel3;
     public GameObject fin;
+    public GameObject tiempo;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,10 @@ public class ControlNivel : MonoBehaviour
     {
         pelotaActiva = Instantiate(pelota, inicioPelota);
         botonReinicio.SetActive(false);
-
+        nivel1.SetActive(true);
+        nivel2.SetActive(false);
+        nivel3.SetActive(false);
+        tiempo.SetActive(false);
     }
 
     public void perdio()

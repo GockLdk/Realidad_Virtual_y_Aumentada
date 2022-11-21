@@ -6541,6 +6541,8 @@ struct ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25  : public MonoBeha
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_10;
 	// UnityEngine.GameObject ControlNivel::fin
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fin_11;
+	// UnityEngine.GameObject ControlNivel::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_12;
 };
 
 // DefaultObserverEventHandler
@@ -6918,8 +6920,16 @@ struct Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20  : public MonoBehaviour_t
 	float ___timeStart_4;
 	// UnityEngine.UI.Text Timer::textBox
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___textBox_5;
+	// UnityEngine.GameObject Timer::nivel1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel1_6;
+	// UnityEngine.GameObject Timer::nivel2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel2_7;
 	// UnityEngine.GameObject Timer::nivel3
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___nivel3_8;
+	// UnityEngine.GameObject Timer::tiempo
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tiempo_9;
+	// UnityEngine.GameObject Timer::botonReinicio
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___botonReinicio_10;
 };
 
 // TMPro.Examples.VertexColorCycler
@@ -7654,9 +7664,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6304[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6305[2] = 
 {
 	static_cast<int32_t>(offsetof(Permission_t915D93FAF4E75226FA1C92144D9291C232C15803_StaticFields, ___m_UnityPermissions_0)),static_cast<int32_t>(offsetof(Permission_t915D93FAF4E75226FA1C92144D9291C232C15803_StaticFields, ___m_Activity_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6307[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6307[9] = 
 {
-	static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___pelota_4)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___botonReinicio_5)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___pelotaActiva_6)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___inicioPelota_7)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel1_8)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel2_9)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel3_10)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___fin_11)),};
+	static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___pelota_4)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___botonReinicio_5)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___pelotaActiva_6)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___inicioPelota_7)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel1_8)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel2_9)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___nivel3_10)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___fin_11)),static_cast<int32_t>(offsetof(ControlNivel_t6759B087DC4B585B7DDEDD4D97CFD29149EB0B25, ___tiempo_12)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6308[4] = 
 {
 	static_cast<int32_t>(offsetof(Meta_t2C7089063FCB12031D5D9E658F0E97A99418117C, ___nivel1_4)),static_cast<int32_t>(offsetof(Meta_t2C7089063FCB12031D5D9E658F0E97A99418117C, ___nivel2_5)),static_cast<int32_t>(offsetof(Meta_t2C7089063FCB12031D5D9E658F0E97A99418117C, ___nivel3_6)),static_cast<int32_t>(offsetof(Meta_t2C7089063FCB12031D5D9E658F0E97A99418117C, ___pelota_7)),};
@@ -7666,9 +7676,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6309[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6310[4] = 
 {
 	static_cast<int32_t>(offsetof(Meta3_t079460124D9A33BFE9D4889D2D1C53E7037CAEC9, ___nivel1_4)),static_cast<int32_t>(offsetof(Meta3_t079460124D9A33BFE9D4889D2D1C53E7037CAEC9, ___nivel2_5)),static_cast<int32_t>(offsetof(Meta3_t079460124D9A33BFE9D4889D2D1C53E7037CAEC9, ___nivel3_6)),static_cast<int32_t>(offsetof(Meta3_t079460124D9A33BFE9D4889D2D1C53E7037CAEC9, ___pelota_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6312[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6312[7] = 
 {
-	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeStart_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___textBox_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___nivel3_6)),};
+	static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___timeStart_4)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___textBox_5)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___nivel1_6)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___nivel2_7)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___nivel3_8)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___tiempo_9)),static_cast<int32_t>(offsetof(Timer_t2FE811324BD2C741B8D6EBC18E20230874E35A20, ___botonReinicio_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6313[3] = 
 {
 	static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatInputField_4)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatDisplayOutput_5)),static_cast<int32_t>(offsetof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15, ___ChatScrollbar_6)),};
